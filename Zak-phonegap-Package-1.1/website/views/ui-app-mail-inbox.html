@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html class=" ">
+
+<head>
+  <!-- 
+         * @Package: Zak mobile App
+         * @Author: themepassion
+         * @Version: 1.0
+        -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Zak Mobile App : Mail Box</title>
+  <meta content="Zak Mobile App" name="description" />
+  <meta content="themepassion" name="author" />
+
+  
+<!-- CORE JS FRAMEWORK - START -->
+<script src="../modules/app/js/jquery.min.js"></script>
+
+<script src="../assets/js/variables.js"></script>
+<script src="../modules/acl/acl.js"></script>
+
+<script src="../assets/js/account.js" type="text/javascript"></script>
+<script src="../modules/app/app.js"></script>
+<!-- CORE JS FRAMEWORK - END -->
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
+
+
+
+
+<!-- CORE CSS FRAMEWORK - START -->
+<link href="../assets/css/preloader.css" type="text/css" rel="stylesheet"
+  media="screen,projection" />
+
+<link href="../modules/app/plugins/materializecss/materialize.min.css" type="text/css"
+  rel="stylesheet" media="screen,projection" />
+<link href="../modules/app/fonts/mdi/materialdesignicons.min.css" type="text/css" rel="stylesheet"
+  media="screen,projection" />
+<link href="../modules/app/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css"
+  rel="stylesheet" media="screen,projection" />
+
+
+<!-- CORE CSS FRAMEWORK - END -->
+
+<!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - START -->
+<!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END -->
+
+<!-- CORE CSS TEMPLATE - START -->
+
+
+<link href="../assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"
+  id="main-style" />
+<script src="../assets/js/global_style.js"></script>  <!-- CORE CSS TEMPLATE - END -->
+
+
+
+</head>
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
+
+
+<body class=" web   html" data-theme="" data-header="light" data-footer="dark" data-header_align="center"
+  data-menu_type="left" data-menu="light" data-menu_icons="on" data-footer_type="left" data-site_mode="light"
+  data-footer_menu="show" data-footer_menu_style="light">
+          <div class="ajaxloader-background preloader-background">
+          <div class="preloader-wrapper">
+            <div id="preloader"></div>
+          </div>
+        </div>
+        <div class="preloader-background apploader-background">
+          <div class="preloader-wrapper">
+            <div id="preloader"></div>
+          </div>
+        </div>
+
+
+        <div class="scroll">
+          <div class="refresh">
+
+          </div>
+        </div>
+        <div class="reloading z-depth-2"><i class="mdi mdi-refresh"></i></div>
+
+
+        <!-- 
+
+        <div class='p2r-example' data-orientation="all"></div> -->
+
+
+  <!-- START navigation -->
+  <nav id="header-topbar" class="fixedtop topbar navigation" role="navigation"></nav>
+  <ul id="slide-nav" class="sidenav sidemenu"></ul>
+  <!-- END navigation -->
+
+
+
+  <ul id="slide-settings" class="sidenav sidesettings right fixed">
+
+  </ul>
+
+  <div class="col s12">
+    <ul class="tabs z-depth-1 mail_tabs">
+    </ul>
+  </div>
+
+
+  <div class="container">
+    <div class="section section-mailbox">
+
+      <h5 class="pagetitle">Mail Box <span class="mailtype"></span>
+        <div class="mail-cat-dd">
+
+          <a class='mailload-trigger waves-effect waves-light btn btn-rounded btn-bordered btn-small mailload-cat'
+            data-id="mailcat" title="Select Mail Category" href='#' data-target='dropdown18'><i
+              class="mdi mdi-label-outline"></i> <span>Category</span><i class="mdi mdi-chevron-down"></i></a>
+
+          <!-- Dropdown Structure -->
+          <ul id='dropdown18' class='dropdown-content mailcat-dd mailbox-dd'>
+          </ul>
+        </div>
+      </h5>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="container content-area">
+    <div class="section">
+
+      <nav class="ui-forms search-nav">
+        <div class="nav-wrapper">
+          <div class="input-field">
+            <input id="search-mail" type="search" class="" placeholder="Search" value="">
+            <label for="search-mail"><i class="mdi mdi-magnify"></i></label>
+            <i class="material-icons mdi mdi-close"></i>
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="mail-select-row z-depth-1">
+        <label class="selall_label">
+          <input type="checkbox" id="selall" name="selall" class="filled-in" />
+          <span class="">Select All</span>
+        </label>
+
+        <div class="mail-pages-area">
+          <div class="input-field col s4" id="pagecount">
+            <select>
+              <option value="5">5</option>
+              <option value="10" selected>10</option>
+              <option value="20">20</option>
+              <option value="50">50</option>
+            </select>
+          </div>
+          <div class="page-arrows">
+            <a class="waves-effect waves-light btn-small btn btn-rounded loadpage previous" data-id="previous"
+              title="Prev page"><i class="mdi mdi-chevron-left"></i></a>
+            <span id="currpage">1</span>
+            <a class="waves-effect waves-light btn-small btn btn-rounded loadpage next" data-id="next"
+              title="Next page"><i class="mdi mdi-chevron-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="bulkaction z-depth-1" style="display:none">
+        <a class="waves-effect waves-light btn btn-rounded btn-bulk" data-id="star" title="Star Selected"><i
+            class="mdi mdi-star"></i></a>
+        <a class="waves-effect waves-light btn btn-rounded btn-bulk" data-id="unstar" title="Unstar Selected"><i
+            class="mdi mdi-star-off"></i></a>
+        <a class="waves-effect waves-light btn btn-rounded btn-bulk" data-id="read" title="Mark as read"><i
+            class="mdi mdi-email-open-outline"></i></a>
+        <a class="waves-effect waves-light btn btn-rounded btn-bulk" data-id="unread" title="Mark as unread"><i
+            class="mdi mdi-email-outline"></i></a>
+        <a class="waves-effect waves-light btn btn-rounded btn-bulk" data-id="trash" title="Move to trash"><i
+            class="mdi mdi-delete-variant"></i></a>
+        <a class="waves-effect waves-light btn btn-rounded btn-bulk" data-id="inbox" title="Move to inbox"><i
+            class="mdi mdi-inbox"></i></a>
+        <a class='category-dd-trigger waves-effect waves-light btn btn-rounded category-btn' data-id="category"
+          title="Change Category" href='#' data-target='dropdown17'><i class="mdi mdi-label-outline"></i><i
+            class="mdi mdi-chevron-down"></i></a>
+
+        <!-- Dropdown Structure -->
+        <ul id='dropdown17' class='dropdown-content category-dd mailbox-dd'>
+        </ul>
+
+      </div>
+
+
+      <ul class="collection mailbox z-depth-1" id="response">
+      </ul>
+
+      <div id="modal-mailmove" class="modal">
+        <div class="modal-content">
+          <h4>Move Mail</h4>
+          <p>Are you sure you want to move this mail thread (<span class="modal-disp" id=""></span>) to <span
+              class="modal-moveto" id=""></span>? </p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect btn" id="delete">Move to trash</a>
+          <a href="#!" class="modal-close waves-effect btn" id="cancel">Cancel</a>
+        </div>
+      </div>
+
+      <div id="modal_bulk" class="modal">
+        <div class="modal-content">
+          <h4>Bulk Action</h4>
+          <p><span class="modal-bulk-msg" id=""></span></p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect btn" id="confirm">Confirm</a>
+          <a href="#!" class="modal-close waves-effect btn" id="cancel">Cancel</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="addbutton">
+    <a href="ui-app-mail-compose.html" class="btn-floating btn primary-bg z-depth-3">
+      <i class="mdi mdi-plus"></i>
+    </a>
+  </div>
+
+
+
+
+
+  <footer class="page-footer" id="page-footer"></footer>
+
+
+
+
+  <div id="footer-menu" class="footer-menu"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- LOAD FILES AT PAGE END FOR FASTER LOADING -->
+
+  <!-- CORE JS FRAMEWORK - START -->
+  <script src="../modules/app/plugins/materializecss/materialize.js"></script>
+<script src="../modules/app/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<script src="../modules/app/plugins/pull-to-refresh/jquery.p2r.min.js"></script>  <!-- CORE JS FRAMEWORK - END -->
+
+
+  <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - START -->
+  <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END -->
+
+
+  <!-- CORE TEMPLATE JS - START -->
+
+
+
+
+  <!-- END CORE TEMPLATE JS - END -->
+
+
+  <script type="text/javascript">
+  $("select").formSelect();
+  $(".category-dd-trigger").dropdown({
+    closeOnClick: false,
+    alignment: "right"
+  });
+  $(".mailload-trigger").dropdown({
+    closeOnClick: false,
+    alignment: "right"
+  });
+  </script>
+
+  <script type="text/javascript" src="../cordova.js"></script>
+
+  <!-- Fetch Data from Rest API calls -->
+  <script type="text/javascript" src="../assets/js/functions.js"></script>
+  <script type="text/javascript" src="../modules/mail/js/mail-features.js"></script>
+  <script type="text/javascript" src="../modules/mail/js/mail.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+/*----------------------------------------
+  Preloader
+------------------------------------------*/
+#preloader:after {
+  border-top-color: #80cbc4;
+}
+#preloader:before {
+  border-top-color: rgba(var(--accent-rgb), 1);
+}
+#preloader {
+  border-top-color: rgba(var(--primary-rgb), 1);
+}
+
+.scroll {
+  width: 100%;
+  background-color: transparent;
+  height: 160px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 996;
+  opacity: 0.5;
+}
+.reloading {
+  background-color: #fff;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  top: 120px;
+  left: 50%;
+  z-index: 1019;
+  display: none;
+  border-radius: 50%;
+  text-align: center;
+}
+.reloading i {
+  display: block;
+  font-size: 22px;
+  line-height: 40px;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+  color: var(--primary-color);
+}
+.scroll .refresh.pulltorefresh {
+  background-color: red;
+  width: 100%;
+  height: 100px;
+}
+.pull-to-refresh {
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+}

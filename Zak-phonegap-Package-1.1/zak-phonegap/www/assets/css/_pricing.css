@@ -1,0 +1,44 @@
+
+/*----------------------------------------
+  Pricing Tables
+----------------------------------------*/
+.pricing-tabs h2{
+  padding: 60px 0 40px 0;
+  background-color: #ccc;
+  margin: 0px;
+  color: #ffffff;
+}
+.pricing-tabs h2.bg-primary{
+  background-color: var(--primary-color);  
+}
+.pricing-tabs h2 sup{
+    font-size: 27px;
+    position: relative;
+    top: -20px;
+}
+.pricing-tabs h2 span{
+  font-size: 65px;  
+  margin: 0 0 0 5px;
+}
+.price-row{
+  padding-top: 0px;
+  margin-bottom: 20px;
+}
+.price-row div{
+  line-height: 50px;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.pricing-tabs .carousel.carousel-slider .carousel-item{
+  height: 490px;
+  padding: 0px !important;
+}
+
+/*----------------------------------------
+  Site - Dark Mode - Pricing Tables
+----------------------------------------*/
+[data-site_mode="dark"] .price-row div{
+   border-color: #455A64;
+}

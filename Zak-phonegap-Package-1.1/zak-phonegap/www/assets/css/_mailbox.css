@@ -1,0 +1,160 @@
+/*----------------------------------------
+  Mailbox / Messages
+------------------------------------------*/
+.collection.mailbox .collection-item.avatar :not(.circle-clipper) > .circle {
+  left: 20px;
+  margin-top: 5px;
+}
+.collection.mailbox .collection-item {
+  padding: 0px 0px;
+}
+.collection.mailbox .from {
+  font-size: 80%;
+  display: block;
+  opacity: 0.8;
+}
+.collection.mailbox .title {
+  text-transform: none;
+  width: 75%;
+  display: inline-block;
+}
+.collection.mailbox.messages .title {
+  text-transform: uppercase;
+}
+.collection.mailbox .collection-item.avatar .circle img {
+  position: absolute;
+  top: 20px;
+  margin-top: 0px;
+}
+.collection .collection-item .maillink {
+  color: #455a64;
+  padding: 15px 20px 15px 75px;
+  display: inline-block;
+  width: 100%;
+}
+
+.collection.mailbox .collection-item.avatar .secondary-content {
+  position: absolute;
+  top: 45px;
+  margin-top: 0px;
+  right: 15px;
+}
+.collection.mailbox .time {
+  position: absolute;
+  top: 0%;
+  margin-top: 15px;
+  right: 20px;
+  font-size: 80%;
+  opacity: 0.8;
+}
+.collection.mailbox .mail-reply {
+  position: relative;
+  padding: 20px;
+  vertical-align: top;
+  margin-bottom: 0px;
+}
+.collection.mailbox .mail-reply label {
+  left: 20px;
+}
+.collection.mailbox.messages p {
+  padding-right: 30px;
+}
+.mailview .title {
+  margin-bottom: 10px;
+}
+.previous.btn,
+.next.btn {
+  background-color: transparent !important;
+  border: 1px solid var(--primary-color);
+  margin: 0px;
+  color: var(--primary-color);
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.previous.btn i,
+.next.btn i {
+  font-size: 18px;
+}
+.previous.btn.disabled,
+.next.btn.disabled {
+  border: 1px solid #ccc;
+}
+.previous.btn {
+  margin: 0 5px 0 0;
+}
+.next.btn {
+  margin: 0 0 0 5px;
+}
+.page-arrows {
+  margin-top: 3px;
+  margin-right: 5px;
+}
+.bulkaction .btn-bulk,
+.bulkaction .category-btn {
+  background-color: transparent !important;
+  border: 1px solid var(--primary-color);
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  color: var(--primary-color);
+  margin: 0 5px 0 0;
+}
+.bulkaction .btn-bulk i {
+  color: var(--primary-color);
+  font-size: 18px;
+}
+.toggleStar {
+  margin: 0px 0px 0px 0;
+  padding: 5px;
+}
+.toggleRead {
+  margin: 0px 0px 0px 0;
+  padding: 5px;
+  position: relative;
+}
+.toggleRead .badge.readcount {
+  height: 16px;
+  width: 16px;
+  line-height: 16px;
+  text-align: center;
+  padding: 0;
+  position: absolute;
+  left: auto;
+  right: -3px;
+  border-radius: 16px;
+  font-size: 10px;
+  top: -6px;
+}
+.toggletrashbtn {
+  margin: 0px -5px 0px 0;
+  padding: 5px;
+}
+.reply-threadbtn,
+.forward-threadbtn,
+.edit-threadbtn,
+.has-attachmentbtn {
+  margin: 0px 0px 0px 0;
+  padding: 5px;
+}
+.collection.mailbox .mailview-attachment {
+  max-width: 100px;
+  float: left;
+  margin: 0 15px 15px 0;
+}
+.collection.mailbox .mailview-attachment img {
+  position: relative;
+  max-width: 100%;
+  margin-top: 0px;
+}
+.collection.mailbox.mailview {
+  margin-top: 15px;
+}
+
+#pagecount .select-wrapper input.select-dropdown {
+  font-size: 14px;
+  line-height: 20px;
+  height: 30px;
+  /* padding: 0 5px; */
+  margin-top: 7px;
+  margin-bottom: 14px;
+  width: 42px;
+}

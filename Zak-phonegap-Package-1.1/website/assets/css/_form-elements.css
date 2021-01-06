@@ -1,0 +1,302 @@
+/*----------------------------------------
+  Form Elements
+------------------------------------------*/
+.input-field .prefix {
+  top: 0.6rem;
+}
+.input-field .prefix.active {
+  color: var(--primary-color);
+}
+input:not([type]):focus:not([readonly]) + label,
+input[type='text']:not(.browser-default):focus:not([readonly]) + label,
+input[type='password']:not(.browser-default):focus:not([readonly]) + label,
+input[type='email']:not(.browser-default):focus:not([readonly]) + label,
+input[type='url']:not(.browser-default):focus:not([readonly]) + label,
+input[type='time']:not(.browser-default):focus:not([readonly]) + label,
+input[type='date']:not(.browser-default):focus:not([readonly]) + label,
+input[type='datetime']:not(.browser-default):focus:not([readonly]) + label,
+input[type='datetime-local']:not(.browser-default):focus:not([readonly])
+  + label,
+input[type='tel']:not(.browser-default):focus:not([readonly]) + label,
+input[type='number']:not(.browser-default):focus:not([readonly]) + label,
+input[type='search']:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: var(--primary-color);
+}
+input:not([type]):focus:not([readonly]),
+input[type='text']:not(.browser-default):focus:not([readonly]),
+input[type='password']:not(.browser-default):focus:not([readonly]),
+input[type='email']:not(.browser-default):focus:not([readonly]),
+input[type='url']:not(.browser-default):focus:not([readonly]),
+input[type='time']:not(.browser-default):focus:not([readonly]),
+input[type='date']:not(.browser-default):focus:not([readonly]),
+input[type='datetime']:not(.browser-default):focus:not([readonly]),
+input[type='datetime-local']:not(.browser-default):focus:not([readonly]),
+input[type='tel']:not(.browser-default):focus:not([readonly]),
+input[type='number']:not(.browser-default):focus:not([readonly]),
+input[type='search']:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid var(--primary-color);
+  -webkit-box-shadow: 0 1px 0 0 var(--primary-color);
+  box-shadow: 0 1px 0 0 var(--primary-color);
+}
+.input-field input[type='search'] ~ .mdi-navigation-close,
+.input-field input[type='search'] ~ .material-icons {
+  font-size: 22px;
+}
+.input-field .prefix {
+  font-size: 20px;
+  top: 12px;
+  width: 2.5rem;
+}
+.input-field .prefix ~ input,
+.input-field .prefix ~ textarea,
+.input-field .prefix ~ label,
+.input-field .prefix ~ .validate ~ label,
+.input-field .prefix ~ .helper-text,
+.input-field .prefix ~ .autocomplete-content {
+  margin-left: 2.5rem;
+  width: 92%;
+  width: calc(100% - 2.5rem);
+}
+.file-field .btn,
+.file-field .btn-large,
+.file-field .btn-small {
+  height: 2rem;
+  line-height: 2rem;
+}
+.file-field span {
+  font-size: 14px;
+}
+input[type='submit'] {
+  cursor: pointer;
+}
+
+/*----------------------------------------
+  Checkboxes
+------------------------------------------*/
+[type='checkbox']:checked + span:not(.lever):before {
+  border-right: 2px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+[type='checkbox'].filled-in:checked + span:not(.lever):after {
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
+}
+[type='checkbox']:checked:disabled + span:before {
+  border-right: 2px solid rgba(0, 0, 0, 0.32);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.32);
+}
+[type='checkbox'].danger:not(.filled-in):checked + span:not(.lever):before {
+  border-right: 2px solid rgba(229, 115, 115, 1);
+  border-bottom: 2px solid rgba(229, 115, 115, 1);
+}
+[type='checkbox'].warning:not(.filled-in):checked + span:not(.lever):before {
+  border-right: 2px solid rgba(255, 138, 101, 1);
+  border-bottom: 2px solid rgba(255, 138, 101, 1);
+}
+[type='checkbox'].success:not(.filled-in):checked + span:not(.lever):before {
+  border-right: 2px solid rgba(129, 199, 132, 1);
+  border-bottom: 2px solid rgba(129, 199, 132, 1);
+}
+[type='checkbox'].info:not(.filled-in):checked + span:not(.lever):before {
+  border-right: 2px solid rgba(0, 151, 167, 1);
+  border-bottom: 2px solid rgba(0, 151, 167, 1);
+}
+[type='checkbox'].filled-in.danger:checked + span:not(.lever):after {
+  border: 2px solid rgba(229, 115, 115, 1);
+  background-color: rgba(229, 115, 115, 1);
+}
+[type='checkbox'].filled-in.warning:checked + span:not(.lever):after {
+  border: 2px solid rgba(255, 138, 101, 1);
+  background-color: rgba(255, 138, 101, 1);
+}
+[type='checkbox'].filled-in.success:checked + span:not(.lever):after {
+  border: 2px solid rgba(129, 199, 132, 1);
+  background-color: rgba(129, 199, 132, 1);
+}
+[type='checkbox'].filled-in.info:checked + span:not(.lever):after {
+  border: 2px solid rgba(0, 151, 167, 1);
+  background-color: rgba(0, 151, 167, 1);
+}
+[type='checkbox'] + span:not(.lever) {
+  line-height: 21px;
+}
+
+/*----------------------------------------
+  Select
+------------------------------------------*/
+.select-dropdown li img {
+  margin: 7px 15px;
+}
+
+/*----------------------------------------
+  Radio Buttons
+------------------------------------------*/
+[type='radio']:checked + span:after,
+[type='radio'].with-gap:checked + span:after {
+  background-color: var(--primary-color);
+}
+[type='radio']:checked + span:after,
+[type='radio'].with-gap:checked + span:before,
+[type='radio'].with-gap:checked + span:after {
+  border: 2px solid var(--primary-color);
+}
+[type='radio']:checked.danger + span:after,
+[type='radio'].with-gap:checked.danger + span:after {
+  background-color: rgba(229, 115, 115, 1);
+}
+[type='radio']:checked.danger + span:after,
+[type='radio'].with-gap:checked.danger + span:before,
+[type='radio'].with-gap:checked.danger + span:after {
+  border: 2px solid rgba(229, 115, 115, 1);
+}
+
+[type='radio']:checked.info + span:after,
+[type='radio'].with-gap:checked.info + span:after {
+  background-color: rgba(0, 151, 167, 1);
+}
+[type='radio']:checked.info + span:after,
+[type='radio'].with-gap:checked.info + span:before,
+[type='radio'].with-gap:checked.info + span:after {
+  border: 2px solid rgba(0, 151, 167, 1);
+}
+
+[type='radio']:checked.warning + span:after,
+[type='radio'].with-gap:checked.warning + span:after {
+  background-color: rgba(255, 138, 101, 1);
+}
+[type='radio']:checked.warning + span:after,
+[type='radio'].with-gap:checked.warning + span:before,
+[type='radio'].with-gap:checked.warning + span:after {
+  border: 2px solid rgba(255, 138, 101, 1);
+}
+
+[type='radio']:checked.success + span:after,
+[type='radio'].with-gap:checked.success + span:after {
+  background-color: rgba(129, 199, 132, 1);
+}
+[type='radio']:checked.success + span:after,
+[type='radio'].with-gap:checked.success + span:before,
+[type='radio'].with-gap:checked.success + span:after {
+  border: 2px solid rgba(129, 199, 132, 1);
+}
+
+[type='checkbox'].filled-in:not(:checked) + span:not(.lever):after {
+  opacity: 0.7;
+}
+
+/*----------------------------------------
+  Site - Dark Mode - Forms
+----------------------------------------*/
+[data-site_mode='dark'] input,
+[data-site_mode='dark'] textarea {
+  color: #f5f5f5;
+}
+[data-site_mode='dark'] .input-field i.prefix {
+  color: #cfd8dc;
+}
+
+/*----------------------------------------
+  Site - Dark Mode - Checkbox & Radio
+----------------------------------------*/
+[data-site_mode='dark'] label {
+  color: #cfd8dc;
+}
+[data-site_mode='dark']
+  [type='checkbox'].filled-in:not(:checked)
+  + span:not(.lever):after,
+[data-site_mode='dark'] [type='checkbox'] + span:not(.lever):before {
+  border-color: #b0bec5;
+}
+[data-site_mode='dark'] [type='checkbox']:checked + span:not(.lever):before {
+  border-right: 2px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  border-left-color: transparent;
+  border-top-color: transparent;
+}
+[data-site_mode='dark']
+  [type='checkbox'].filled-in:not(.colored):checked
+  + span:not(.lever):after {
+  background-color: var(--primary-color);
+}
+[data-site_mode='dark']
+  [type='checkbox'].filled-in:checked
+  + span:not(.lever):before {
+  border-right: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+  border-left-color: transparent;
+  border-top-color: transparent;
+}
+[data-site_mode='dark'] label input[disabled='disabled'] + span {
+  color: #78909c;
+}
+[data-site_mode='dark'] [type='radio']:not(:checked) + span:before,
+[data-site_mode='dark'] [type='radio']:not(:checked) + span:after {
+  border-color: #b0bec5;
+}
+[data-site_mode='dark'] [type='radio']:disabled:checked + span:after {
+  background-color: #78909c;
+  border-color: #78909c;
+}
+[data-site_mode='dark'] [type='radio']:disabled:not(:checked) + span:before,
+[data-site_mode='dark'] [type='radio']:disabled:not(:checked) + span:after {
+  border-color: #78909c;
+  background-color: transparent;
+}
+/*----------------------------------------
+  Site - Dark Mode - Range & Select
+----------------------------------------*/
+[data-site_mode='dark'] .noUi-target {
+  background-color: #78909c;
+}
+[data-site_mode='dark'] .select-wrapper .caret {
+  fill: #f5f5f5;
+}
+[data-site_mode='dark'] .select-dropdown li.optgroup {
+  border-top: 1px solid #455a64;
+}
+[data-site_mode='dark'] .input-field .helper-text {
+  color: #b0bec5;
+}
+[data-site_mode='dark'] .select-wrapper.disabled + label {
+  color: #90a4ae;
+}
+[data-site_mode='dark'] .select-wrapper input.select-dropdown:disabled {
+  color: #90a4ae;
+}
+[data-site_mode='dark'] input[type='text']:disabled {
+  border-bottom: 1px solid rgba(200, 200, 200, 0.5);
+}
+/*----------------------------------------
+  Site - Dark Mode - Inputs
+----------------------------------------*/
+[data-site_mode='dark']
+  .input-field
+  input[type='search']:focus:not(.browser-default) {
+  background-color: #455a64;
+  color: #f5f5f5;
+}
+[data-site_mode='dark']
+  .input-field
+  input[type='search']:focus:not(.browser-default)
+  + label
+  i,
+[data-site_mode='dark']
+  .input-field
+  input[type='search']:focus:not(.browser-default)
+  ~ .mdi-navigation-close,
+[data-site_mode='dark']
+  .input-field
+  input[type='search']:focus:not(.browser-default)
+  ~ .material-icons {
+  color: #f5f5f5;
+}
+[data-site_mode='dark']
+  input[type='text']:not(.browser-default):disabled
+  + label {
+  color: #b0bec5;
+}
+[data-site_mode='dark'] input[type='text']:not(.browser-default):disabled {
+  color: #b0bec5;
+}

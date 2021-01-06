@@ -1,0 +1,20 @@
+
+/*----------------------------------------
+  Invoice
+----------------------------------------*/
+.collection.invoice-item .collection-item.non-avatar{
+  padding-left: 15px;
+  position: relative;
+}
+.collection.invoice-item .collection-item.non-avatar .secondary-content{
+  position: absolute;
+  top: 14px;
+  right: 20px;
+}
+.collection.invoice-item .collection-item.non-avatar .item-det h6{
+  margin-top: 5px;
+}
+.collection.invoice-item .collection-item.avatar .secondary-content{
+  top: 24px;
+  right: 20px;
+}

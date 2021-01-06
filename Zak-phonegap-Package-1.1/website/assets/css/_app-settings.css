@@ -1,0 +1,99 @@
+/*----------------------------------------
+  App Settings
+----------------------------------------*/
+.settings-row {
+	margin: 0 -15px;
+}
+.setting-box {
+	background-color: #ffffff;
+	border-radius: 2px;
+	padding: 15px 5px;
+	margin-bottom: 24px;
+	/* min-width: 166px; */
+}
+.setting-box .divide {
+	display: block;
+	width: 100%;
+}
+@media only screen and (max-width: 360px) {
+	.row .col.s6.set-wrap {
+		width: 100%;
+	}
+	.setting-box .divide {
+		display: inline-block;
+		width: 6px;
+	}
+}
+@media only screen and (min-width: 570px) {
+	.setting-box .divide {
+		display: inline-block;
+		width: 6px;
+	}
+}
+
+.setting-box i {
+	font-size: 30px;
+	margin: 0 0 10px 0;
+	line-height: 30px;
+	display: inline-block;
+	color: var(--primary-color);
+}
+.setting-box h6 {
+	margin: 0px;
+	color: #455a64;
+}
+.setting-box a {
+	display: inline-block;
+	width: 100%;
+}
+/*----------------------------------------
+  App Settings
+------------------------------------------*/
+.appsettings .mdi:before {
+	content: "\F131" !important;
+}
+.appsettings.active .mdi:before {
+	content: "\F855" !important;
+}
+.appsettings.active:not([data-type="theme"]) .mdi:before {
+	color: var(--primary-color) !important;
+}
+
+[data-menu="colored"] .appsettings:not([data-type="theme"]) .mdi:before {
+	color: #ffffff !important;
+}
+[data-menu="colored"] .appsettings.active:not([data-type="theme"]) .mdi:before {
+	color: #ffffff !important;
+}
+[data-menu="colored"] .appsettings[data-type="theme"] .mdi:before {
+	color: #ffffff !important;
+}
+.sidesettings .lvl1.theme {
+	width: 30%;
+	float: left;
+	margin-bottom: 10px;
+	margin-left: 2%;
+}
+.sidenav li.lvl1.theme .waves-effect {
+	padding-left: 0px;
+}
+.sidesettings .sh-wrap {
+	clear: both;
+	display: block;
+	width: 100%;
+}
+.sidesettings .lvl1.theme a {
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+}
+.sidesettings .lvl1.theme a i {
+	display: block;
+	margin: 5px 0 3px 0px;
+	font-size: 21px;
+}
+.sidesettings .lvl1.theme a .title {
+	display: block;
+	line-height: 22px;
+	margin-bottom: 8px;
+}

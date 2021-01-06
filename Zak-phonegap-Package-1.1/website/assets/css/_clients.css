@@ -1,0 +1,29 @@
+/*----------------------------------------
+  Clients
+----------------------------------------*/
+.clients-row {
+  margin: 0 -15px;
+}
+.client-box {
+  background-color: #ffffff;
+  /* box-shadow: 2px 2px 2px rgba(0,0,0,.1); */
+  border-radius: 2px;
+  padding: 15px;
+  margin-bottom: 24px;
+  text-align: center;
+  height: 90px;
+}
+.client-box img {
+  width: 80%;
+  margin: 20px auto;
+  max-width: 120px;
+}
+.client-box a {
+  display: inline-block;
+}
+/*----------------------------------------
+  Site - Dark Mode - Client
+----------------------------------------*/
+[data-site_mode='dark'] .client-box {
+  background-color: #546e7a;
+}

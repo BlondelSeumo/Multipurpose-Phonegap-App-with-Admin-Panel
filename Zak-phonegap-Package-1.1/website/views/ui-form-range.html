@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html class=" ">
+
+<head>
+    <!-- 
+         * @Package: Zak mobile App
+         * @Author: themepassion
+         * @Version: 1.0
+        -->
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Zak Mobile App : Range</title>
+    <meta content="Zak Mobile App" name="description" />
+    <meta content="themepassion" name="author" />
+
+    
+<!-- CORE JS FRAMEWORK - START -->
+<script src="../modules/app/js/jquery.min.js"></script>
+
+<script src="../assets/js/variables.js"></script>
+<script src="../modules/acl/acl.js"></script>
+
+<script src="../assets/js/account.js" type="text/javascript"></script>
+<script src="../modules/app/app.js"></script>
+<!-- CORE JS FRAMEWORK - END -->
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
+
+
+
+
+<!-- CORE CSS FRAMEWORK - START -->
+<link href="../assets/css/preloader.css" type="text/css" rel="stylesheet"
+  media="screen,projection" />
+
+<link href="../modules/app/plugins/materializecss/materialize.min.css" type="text/css"
+  rel="stylesheet" media="screen,projection" />
+<link href="../modules/app/fonts/mdi/materialdesignicons.min.css" type="text/css" rel="stylesheet"
+  media="screen,projection" />
+<link href="../modules/app/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css"
+  rel="stylesheet" media="screen,projection" />
+
+
+<!-- CORE CSS FRAMEWORK - END -->
+
+<!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - START -->
+<!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END -->
+
+<!-- CORE CSS TEMPLATE - START -->
+
+
+<link href="../assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"
+  id="main-style" />
+<script src="../assets/js/global_style.js"></script>
+
+    <script src="../assets/js/nouislider.min.js" type="text/javascript"></script>
+    <link href="../assets/css/nouislider.css" rel="stylesheet" type="text/css" media="screen" />
+    <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END -->
+
+</head>
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
+
+
+<body class=" web   html" data-theme="" data-header="light" data-footer="dark" data-header_align="center"
+    data-menu_type="left" data-menu="light" data-menu_icons="on" data-footer_type="left" data-site_mode="light"
+    data-footer_menu="show" data-footer_menu_style="light">
+            <div class="ajaxloader-background preloader-background">
+          <div class="preloader-wrapper">
+            <div id="preloader"></div>
+          </div>
+        </div>
+        <div class="preloader-background apploader-background">
+          <div class="preloader-wrapper">
+            <div id="preloader"></div>
+          </div>
+        </div>
+
+
+        <div class="scroll">
+          <div class="refresh">
+
+          </div>
+        </div>
+        <div class="reloading z-depth-2"><i class="mdi mdi-refresh"></i></div>
+
+
+        <!-- 
+
+        <div class='p2r-example' data-orientation="all"></div> -->
+
+
+    <!-- START navigation -->
+    <nav id="header-topbar" class="fixedtop topbar navigation" role="navigation"></nav>
+    <ul id="slide-nav" class="sidenav sidemenu"></ul>
+    <!-- END navigation -->
+
+
+
+    <ul id="slide-settings" class="sidenav sidesettings right fixed">
+
+    </ul>
+
+    <div class="container">
+        <div class="section">
+            <h5 class="pagetitle">Range</h5>
+
+            <p>ZAK is premium and multi purpose Mobile UI APP with tons of features and functionalities. Try it now.
+            </p>
+            <div class="divider"></div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="section">
+
+
+            <div class="row ">
+                <div class="col s12 pad-0">
+                    <h5 class="bot-20 sec-tit  ">Range</h5>
+                    <p>Simple Range</p>
+                    <div id="test-slider1"></div>
+
+                    <div class="spacer-medium"></div>
+
+                    <p>Min and Max Range</p>
+                    <div id="test-slider2"></div>
+
+                    <div class="spacer-medium"></div>
+
+                    <p>Multiple Range</p>
+                    <div id="test-slider3"></div>
+
+
+
+
+                    <script type="text/javascript">
+                    var slider = document.getElementById('test-slider2');
+                    noUiSlider.create(slider, {
+                        start: [20, 80],
+                        connect: true,
+                        step: 1,
+                        orientation: 'horizontal', // 'horizontal' or 'vertical'
+                        range: {
+                            'min': 0,
+                            'max': 100
+                        },
+                        format: wNumb({
+                            decimals: 0
+                        })
+                    });
+
+                    var slider = document.getElementById('test-slider1');
+                    noUiSlider.create(slider, {
+                        start: [50],
+                        connect: true,
+                        step: 1,
+                        orientation: 'horizontal', // 'horizontal' or 'vertical'
+                        range: {
+                            'min': 0,
+                            'max': 100
+                        },
+                        format: wNumb({
+                            decimals: 0
+                        })
+                    });
+                    var slider = document.getElementById('test-slider3');
+                    noUiSlider.create(slider, {
+                        start: [20, 50, 80],
+                        connect: true,
+                        step: 1,
+                        orientation: 'horizontal', // 'horizontal' or 'vertical'
+                        range: {
+                            'min': 0,
+                            'max': 100
+                        },
+                        format: wNumb({
+                            decimals: 0
+                        })
+                    });
+                    </script>
+
+
+                </div>
+            </div>
+
+            <div class="spacer"></div>
+            <div class="divider"></div>
+            <div class="spacer"></div>
+
+            <div class="row ">
+                <div class="col s12 pad-0">
+                    <h5 class="bot-20 sec-tit  ">Range Colors</h5>
+                    <p>Danger Range</p>
+                    <div id="test-slider21" class="danger"></div>
+
+                    <div class="spacer-medium"></div>
+
+
+                    <p>Info Range</p>
+                    <div id="test-slider22" class="info"></div>
+
+                    <div class="spacer-medium"></div>
+
+
+                    <p>Warning Range</p>
+                    <div id="test-slider23" class="warning"></div>
+
+                    <div class="spacer-medium"></div>
+
+
+                    <p>Success Range</p>
+                    <div id="test-slider24" class="success"></div>
+
+
+                    <script type="text/javascript">
+                    var slider = document.getElementById('test-slider21');
+                    noUiSlider.create(slider, {
+                        start: [20, 80],
+                        connect: true,
+                        step: 1,
+                        orientation: 'horizontal', // 'horizontal' or 'vertical'
+                        range: {
+                            'min': 0,
+                            'max': 100
+                        },
+                        format: wNumb({
+                            decimals: 0
+                        })
+                    });
+
+                    var slider = document.getElementById('test-slider22');
+                    noUiSlider.create(slider, {
+                        start: [20, 80],
+                        connect: true,
+                        step: 1,
+                        orientation: 'horizontal', // 'horizontal' or 'vertical'
+                        range: {
+                            'min': 0,
+                            'max': 100
+                        },
+                        format: wNumb({
+                            decimals: 0
+                        })
+                    });
+
+                    var slider = document.getElementById('test-slider23');
+                    noUiSlider.create(slider, {
+                        start: [20, 80],
+                        connect: true,
+                        step: 1,
+                        orientation: 'horizontal', // 'horizontal' or 'vertical'
+                        range: {
+                            'min': 0,
+                            'max': 100
+                        },
+                        format: wNumb({
+                            decimals: 0
+                        })
+                    });
+
+                    var slider = document.getElementById('test-slider24');
+                    noUiSlider.create(slider, {
+                        start: [20, 80],
+                        connect: true,
+                        step: 1,
+                        orientation: 'horizontal', // 'horizontal' or 'vertical'
+                        range: {
+                            'min': 0,
+                            'max': 100
+                        },
+                        format: wNumb({
+                            decimals: 0
+                        })
+                    });
+                    </script>
+
+
+                </div>
+            </div>
+
+
+            <div class="spacer"></div>
+            <div class="divider"></div>
+            <div class="spacer"></div>
+
+
+
+            <div class="row ">
+                <div class="col s12 pad-0">
+                    <h5 class="bot-20 sec-tit  ">Range Colorpicker</h5>
+
+                    <div id="colorpicker">
+                        <div class="sliders danger" id="red"></div>
+                        <div class="sliders success" id="green"></div>
+                        <div class="sliders hexblue" id="blue"></div>
+
+                        <div id="result" class="z-depth-1"></div>
+
+                    </div>
+
+                    <script>
+                    var resultElement = document.getElementById('result');
+                    var sliders = document.getElementsByClassName('sliders');
+                    var colors = [0, 0, 0];
+
+                    [].slice.call(sliders).forEach(function(slider, index) {
+
+                        noUiSlider.create(slider, {
+                            start: 200,
+                            connect: [true, false],
+                            orientation: "vertical",
+                            range: {
+                                'min': 0,
+                                'max': 255
+                            },
+                            format: wNumb({
+                                decimals: 0
+                            })
+                        });
+
+                        // Bind the color changing function to the update event.
+                        slider.noUiSlider.on('update', function() {
+
+                            colors[index] = slider.noUiSlider.get();
+
+                            var color = 'rgb(' + colors.join(',') + ')';
+
+                            resultElement.style.background = color;
+                            resultElement.style.color = color;
+                        });
+                    });
+                    </script>
+                    <style type="text/css">
+                    #red,
+                    #green,
+                    #blue {
+                        margin: 20px;
+                        display: inline-block;
+                        height: 200px;
+                    }
+
+                    #colorpicker {
+                        height: 240px;
+                        width: 100%;
+                        margin: 0 auto;
+                        padding: 10px;
+                    }
+
+                    #result {
+                        margin: 60px 26px;
+                        height: 100px;
+                        width: 100px;
+                        display: inline-block;
+                        vertical-align: top;
+                    }
+
+                    #red .noUi-connect {
+                        background: #E57373;
+                    }
+
+                    #green .noUi-connect {
+                        background: #81C784;
+                    }
+
+                    #blue .noUi-connect {
+                        background: #5C6BC0;
+                    }
+                    </style>
+
+
+                </div>
+            </div>
+
+
+            <div class="spacer"></div>
+            <div class="divider"></div>
+            <div class="spacer"></div>
+
+            <div class="row ">
+                <div class="col s12 pad-0">
+                    <h5 class="bot-20 sec-tit  ">Dates Range</h5>
+                    <div class="example">
+                        <div id="slider-date"></div>
+                        <div class="spacer"></div>
+                        <p>Start Date: <strong><span class="example-val" id="event-start"></span></strong></p>
+                        <p>End Date: <strong><span class="example-val" id="event-end"></span></strong></p>
+
+                    </div>
+
+
+
+                    <script>
+                    // Create a new date from a string, return as a timestamp.
+                    function timestamp(str) {
+                        return new Date(str).getTime();
+                    }
+                    </script>
+                    <script>
+                    // Create a list of day and monthnames.
+                    var
+                        weekdays = [
+                            "Sunday", "Monday", "Tuesday",
+                            "Wednesday", "Thursday", "Friday",
+                            "Saturday"
+                        ],
+                        months = [
+                            "January", "February", "March",
+                            "April", "May", "June", "July",
+                            "August", "September", "October",
+                            "November", "December"
+                        ];
+
+                    // Append a suffix to dates.
+                    // Example: 23 => 23rd, 1 => 1st.
+                    function nth(d) {
+                        if (d > 3 && d < 21) return 'th';
+                        switch (d % 10) {
+                            case 1:
+                                return "st";
+                            case 2:
+                                return "nd";
+                            case 3:
+                                return "rd";
+                            default:
+                                return "th";
+                        }
+                    }
+
+                    // Create a string representation of the date.
+                    function formatDate(date) {
+                        return weekdays[date.getDay()] + ", " +
+                            date.getDate() + nth(date.getDate()) + " " +
+                            months[date.getMonth()] + " " +
+                            date.getFullYear();
+                    }
+                    </script>
+                    <script>
+                    var dateSlider = document.getElementById('slider-date');
+
+                    noUiSlider.create(dateSlider, {
+                        // Create two timestamps to define a range.
+                        range: {
+                            min: timestamp('2010'),
+                            max: timestamp('2016')
+                        },
+
+                        // Steps of one week
+                        step: 7 * 24 * 60 * 60 * 1000,
+
+                        // Two more timestamps indicate the handle starting positions.
+                        start: [timestamp('2011'), timestamp('2015')],
+
+                        // No decimals
+                        format: wNumb({
+                            decimals: 0
+                        })
+                    });
+                    </script>
+                    <script>
+                    var dateValues = [
+                        document.getElementById('event-start'),
+                        document.getElementById('event-end')
+                    ];
+
+                    dateSlider.noUiSlider.on('update', function(values, handle) {
+                        dateValues[handle].innerHTML = formatDate(new Date(+values[handle]));
+                    });
+                    </script>
+
+                </div>
+            </div>
+
+            <div class="spacer"></div>
+            <div class="divider"></div>
+            <div class="spacer"></div>
+
+            <div class="row ">
+                <div class="col s12 pad-0">
+                    <h5 class="bot-20 sec-tit  ">Input Control Range</h5>
+                    <div class="example">
+                        <p>Change the values below to see the changes in range.</p>
+                        <div class="spacer"></div>
+                        <div id="html5"></div>
+                        <div class="input-field col s3">
+                            <select id="input-select">
+                                <option value="" disabled selected>Select</option>
+                            </select>
+                        </div>
+                        <div class="input-field col s3">
+                            <input type="number" min="-20" max="40" step="1" id="input-number">
+                        </div>
+                    </div>
+
+                    <script>
+                    var select = document.getElementById('input-select');
+
+                    // Append the option elements
+                    for (var i = -20; i <= 40; i++) {
+
+                        var option = document.createElement("option");
+                        option.text = i;
+                        option.value = i;
+
+                        select.appendChild(option);
+                    }
+                    </script>
+                    <script>
+                    var html5Slider = document.getElementById('html5');
+
+                    noUiSlider.create(html5Slider, {
+                        start: [10, 30],
+                        connect: true,
+                        range: {
+                            'min': -20,
+                            'max': 40
+                        }
+                    });
+                    </script>
+                    <script>
+                    var inputNumber = document.getElementById('input-number');
+
+                    html5Slider.noUiSlider.on('update', function(values, handle) {
+
+                        var value = values[handle];
+
+                        if (handle) {
+                            inputNumber.value = value;
+                        } else {
+                            select.value = Math.round(value);
+                        }
+                    });
+
+                    select.addEventListener('change', function() {
+                        html5Slider.noUiSlider.set([this.value, null]);
+                    });
+
+                    inputNumber.addEventListener('change', function() {
+                        html5Slider.noUiSlider.set([null, this.value]);
+                    });
+                    </script>
+                    <style type="text/css">
+                    /* #input-select,
+                            #input-number {
+                padding: 7px;
+                margin: 15px 5px 5px;
+                width: 70px;
+                            } */
+                    </style>
+
+
+                </div>
+            </div>
+
+
+            <div class="spacer"></div>
+            <div class="divider"></div>
+            <div class="spacer"></div>
+
+
+            <div class="row ">
+                <div class="col s12 pad-0">
+                    <h5 class="bot-20 sec-tit  ">Skip Step Range</h5>
+                    <div class="example">
+                        <p>Ranges are skipped in this example. 40 and 80 values are skipped.</p>
+                        <div class="spacer"></div>
+
+                        <div id="skipstep"></div>
+                        <p>Start:
+                            <strong><span class="example-val" id="skip-value-lower"></span></strong>
+                        </p>
+                        <p>End:
+                            <strong><span class="example-val" id="skip-value-upper"></span></strong>
+                        </p>
+                    </div>
+
+
+                    <script>
+                    var skipSlider = document.getElementById('skipstep');
+
+                    noUiSlider.create(skipSlider, {
+                        range: {
+                            'min': 0,
+                            '10%': 10,
+                            '20%': 20,
+                            '30%': 30,
+                            // Nope, 40 is no fun.
+                            '50%': 50,
+                            '60%': 60,
+                            '70%': 70,
+                            // I never liked 80.
+                            '90%': 90,
+                            'max': 100
+                        },
+                        snap: true,
+                        start: [20, 90]
+                    });
+                    </script>
+                    <script>
+                    var skipValues = [
+                        document.getElementById('skip-value-lower'),
+                        document.getElementById('skip-value-upper')
+                    ];
+
+                    skipSlider.noUiSlider.on('update', function(values, handle) {
+                        skipValues[handle].innerHTML = values[handle];
+                    });
+                    </script>
+
+                </div>
+            </div>
+
+            <div class="spacer"></div>
+            <div class="divider"></div>
+            <div class="spacer"></div>
+
+
+
+            <div class="row ">
+                <div class="col s12 pad-0">
+                    <h5 class="bot-20 sec-tit  ">Colored Connect Range</h5>
+
+
+                    <div class="example">
+                        <div class="slider" id="slider-color"></div>
+                    </div>
+                    <script>
+                    var slider = document.getElementById('slider-color');
+
+                    noUiSlider.create(slider, {
+                        start: [4000, 8000, 12000, 16000],
+                        connect: [false, true, true, true, true],
+                        range: {
+                            'min': [2000],
+                            'max': [20000]
+                        }
+                    });
+                    </script>
+                    <script>
+                    var connect = slider.querySelectorAll('.noUi-connect');
+                    var classes = ['c-1-color', 'c-2-color', 'c-3-color', 'c-4-color', 'c-5-color'];
+
+                    for (var i = 0; i < connect.length; i++) {
+                        connect[i].classList.add(classes[i]);
+                    }
+                    </script>
+                    <style type="text/css">
+                    .c-1-color {
+                        background-color: rgba(229, 115, 115, 1) !important;
+                    }
+
+                    .c-2-color {
+                        background-color: rgba(129, 199, 132, 1) !important;
+                    }
+
+                    .c-3-color {
+                        background-color: rgba(0, 151, 167, 1) !important;
+                    }
+
+                    .c-4-color {
+                        background-color: rgba(255, 138, 101, 1) !important;
+                    }
+
+                    .c-5-color {
+                        background-color: rgba(149, 117, 205, 1) !important;
+                    }
+                    </style>
+
+
+                </div>
+            </div>
+
+
+            <div class="spacer"></div>
+
+        </div>
+    </div>
+
+
+
+
+    <footer class="page-footer" id="page-footer"></footer>
+
+
+
+
+    <div id="footer-menu" class="footer-menu"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- LOAD FILES AT PAGE END FOR FASTER LOADING -->
+
+    <!-- CORE JS FRAMEWORK - START -->
+    <script src="../modules/app/plugins/materializecss/materialize.js"></script>
+<script src="../modules/app/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<script src="../modules/app/plugins/pull-to-refresh/jquery.p2r.min.js"></script>    <!-- CORE JS FRAMEWORK - END -->
+
+
+    <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - START -->
+    <script type='text/javascript'>
+    $(document).ready(function() {
+        $('select').formSelect();
+    });
+    </script><!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END -->
+
+
+    <!-- CORE TEMPLATE JS - START -->
+
+
+
+
+    <!-- END CORE TEMPLATE JS - END -->
+
+
+    <script type="text/javascript">
+
+    </script>
+
+    <script type="text/javascript" src="../cordova.js"></script>
+
+</body>
+
+</html>

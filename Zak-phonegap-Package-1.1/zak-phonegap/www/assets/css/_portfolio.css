@@ -1,0 +1,71 @@
+/*----------------------------------------
+  Portfolio
+------------------------------------------*/
+.row.ui-mediabox.fullwidth {
+	margin-bottom: 0px;
+}
+.ui-mediabox.fullwidth .col {
+	padding: 0px;
+	margin-bottom: 0px;
+}
+.row.ui-mediabox {
+	margin: 0 -0.75rem;
+}
+.row.ui-mediabox.team-box,
+.row.ui-mediabox.fullwidth {
+	margin: 0px;
+}
+.row.ui-mediabox.circular img {
+	border-radius: 50%;
+}
+.port-data {
+	text-align: center;
+}
+.ui-mediabox.fullwidth .port-data {
+	padding: 0 30px;
+}
+.port-data a h4,
+.port-data a h5,
+.port-data a h6 {
+	color: #455a64;
+	text-align: left;
+}
+.port-data.center a h4,
+.port-data.center a h5,
+.port-data.center a h6 {
+	text-align: center;
+}
+.port-title {
+	text-align: center;
+}
+
+.port-info {
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+	margin: 5px 0 0 0;
+}
+.port-info .owner {
+	display: inline-block;
+	width: auto;
+	line-height: 24px;
+	margin-right: 15px;
+}
+.port-info .owner img {
+	height: 24px;
+	width: 24px;
+	line-height: 24px;
+	margin: 0 8px 0 0;
+	float: left;
+}
+.port-actions {
+	margin: 10px 0 0px 0;
+	text-align: left;
+}
+/*----------------------------------------
+  Site - Dark Mode - Portfolio
+----------------------------------------*/
+[data-site_mode="dark"] .port-data a h4,
+[data-site_mode="dark"] .port-data a h5 {
+	color: #f5f5f5;
+}

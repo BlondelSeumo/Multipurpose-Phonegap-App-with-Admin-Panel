@@ -1,0 +1,72 @@
+/*----------------------------------------
+  Events
+------------------------------------------*/
+.events .event-item {
+	background-color: #ffffff;
+	padding: 15px;
+	position: relative;
+	margin: 0 0 15px 0;
+	border-radius: 2px;
+}
+.events .title {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.events .time {
+	margin: 5px 0 0 0;
+	font-size: 80%;
+}
+.events .actions {
+	position: absolute;
+	right: 5px;
+	top: 60px;
+}
+.events .actions a i {
+	color: #455a64;
+	font-size: 20px;
+	margin: 0 0 0 10px;
+}
+.events .people a img {
+	width: 30px;
+	height: 30px;
+	box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.events .people a {
+	margin: 0 -10px 0 0;
+}
+.events .badge {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+.event-btns {
+	margin-top: 15px;
+}
+.event-attachment-area {
+	display: inline-block;
+	width: 100%;
+	margin: 0px 0 0 0;
+}
+.event-attachment {
+	max-width: 100px;
+	float: left;
+	margin: 15px 15px 0 0;
+}
+.event-attachment img {
+	position: relative;
+	max-width: 100%;
+	margin-top: 0px;
+}
+ul.events {
+	margin-top: 0px;
+}
+
+/*----------------------------------------
+  Site - Dark Mode - Events
+----------------------------------------*/
+[data-site_mode="dark"] .events .event-item {
+	background-color: #37474f;
+}
+[data-site_mode="dark"] .events .actions a i {
+	color: #cfd8dc;
+}

@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<!--if lt IE 7html.no-js.lt-ie9.lt-ie8.lt-ie7
+-->
+<!--if IE 7html.no-js.lt-ie9.lt-ie8
+-->
+<!--if IE 8html.no-js.lt-ie9
+-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <!-- if IEmeta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    -->
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- if lt IE 9
+    script(src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+    
+    -->
+    <!-- stylesheets-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <style type="text/css">
+        .colorbox {
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            height: 60px;
+            width: 200px;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            float: left;
+            margin: 5px;
+        }
+
+        h4 {
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        img {
+            max-width: 800px;
+            height: auto;
+            width: 100%;
+            border: 1px solid #cccccc;
+            padding: 5px;
+            border-radius: 0px;
+            margin: 15px 0 25px 0;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+    <header role="banner" class="navbar navbar-inverse navbar-fixed-top bs-docs-nav">
+
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Our App: Multi Purpose Phonegap App with Admin Panel, Website & Rest
+                    Api</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="1. Installation.html">Installation</a></li>
+                    <li><a href="2. Cordova (Phonegap) Mobile App.html">Phonegap & Web App</a></li>
+                    <li><a href="3. Admin Panel.html">Admin Panel</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+
+    </header>
+    <div id="content" class="bs-header">
+        <div class="container">
+            <h1>Installation & Configuration</h1>
+        </div>
+    </div>
+    <div class="container bs-docs-container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="bs-sidebar hidden-print">
+                    <ul class="nav bs-sidenav">
+                        <li><a href="#intro">Introduction</a></li>
+                        <li><a href="#system-requirements">System Requirements</a></li>
+                        <li><a href="#database">Configure Database</a></li>
+                        <li><a href="#restapi">Rest Api</a></li>
+                        <li><a href="#create-phonegap">Create Phonegap App</a></li>
+                        <li><a href="#configure-app">Configure App</a></li>
+                        <li><a href="#add-platforms">Add Platforms</a></li>
+                        <li><a href="#admin-panel">Admin Panel</a></li>
+                        <li><a href="#configure-admin">Configure Admin Panel</a></li>
+                        <li><a href="#run-admin">Run Admin Panel</a></li>
+                        <li><a href="#import-demo">Import Demo</a></li>
+                        <li><a href="#google-login">App Google Login</a></li>
+                        <li><a href="#build-app">Build Your App</a></li>
+                        <li><a href="#debug-app">Debug Your App</a></li>
+                        <li><a href="#build-admin">Build Admin Panel</a></li>
+                        <li><a href="#website">Configure Website</a></li>
+                        <li><a href="#google-login-web">Website Google Login</a></li>
+                        <li><a href="#thanks">Thanks</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div role="main" class="col-md-9">
+
+                <section id="intro">
+                    <div class="page-header">
+                        <h1>Introduction</h1>
+                    </div>
+                    <p class="lead">"Our App: Multi Purpose Phonegap App with Admin Panel, Website & Rest Api" can be used
+                        for various types of
+                        project applications. Various niche based mobile app projects for like CRM, Freelancing,
+                        Blogging, Ecommerce, University, Hospital, Social Media and General make this app a
+                        complete one stop solution for all your needs. </p>
+
+                    <p class="lead">Phonegap App is designed using
+                        Materialize CSS Framework. It is modern responsive front-end framework based on Material Design.
+                        It
+                        is specially designed to give your mobile app a unique and elegant look. It is easy to customize
+                        and coded in developer friendly manner.</p>
+                    <p class="lead">Our App App Admin Panel is a premium admin dashboard built with the
+                        Powerful React framework and Bootstrap 4 with Reactstrap and create-react-app. It is the backend
+                        of our project. It gives full access to administrator of phonegap app. Our App App Admin Panel
+                        includes many react based plugins.
+                    </p>
+                    <p class="lead">Our App Rest Api helps keeping all our app logic and store data in database. Rest Api
+                        makes our app content dynamic. It connects Phonegap app and backend panel together. We use PHP
+                        as our backend programming language and MySql as database for Rest Api.</p>
+
+                    <p class="lead">Let's Get Started with Installation...</p>
+
+                </section>
+
+                <section id="system-requirements">
+                    <div class="page-header">
+                        <h1>System Requirements</h1>
+                    </div>
+                    <p>Before proceeding further with installation we need to make sure we have all the required
+                        softwares and applications installed on our system.</p>
+
+                    <p>
+                        You will need to have installed <a href="http://nodejs.org"
+                            class="text-info font-bold">Node.js</a> on your computer. Also insure that you have <a
+                            href="https://www.npmjs.org/" class="text-info font-bold">NPM</a> installed.
+                        <br> You can check if these are installed properly by opening up a Terminal (Linux or Mac) or
+                        Command Prompt (Windows)
+                        <br> and entering the command: <code>node --version</code> and <code>npm --version</code> These
+                        commands should output something similar to "v12.18.0" and "6.14.4" respectively.
+                    </p>
+
+                    <h4>Installing Cordova</h4>
+                    <p>
+                        Open up a Terminal (Linux or Mac) or
+                        Command Prompt (Windows) and Run below command to install cordova globally on your system
+                    </p>
+                    <pre>npm install -g cordova</pre>
+                    <p>More info about Cordova can be found here: <a
+                            href="https://cordova.apache.org/#getstarted">https://cordova.apache.org/#getstarted</a></p>
+
+
+                    <h4>Installing Phonegap</h4>
+                    <p>
+                        Open up a Terminal (Linux or Mac) or
+                        Command Prompt (Windows) and Run below command to install phonegap globally on your system
+                    </p>
+                    <pre>npm install -g phonegap@latest</pre>
+                    <p>More info about Phonegap can be found here: <a
+                            href="http://docs.phonegap.com/">http://docs.phonegap.com/</a></p>
+
+
+                    <h4>Installing Android Studio</h4>
+                    <p>
+                        You will need Android studio on your system to build android version of this app.
+                    </p>
+                    <p>Download and Install Android Studio from here: <a
+                            href="https://developer.android.com/studio/">https://developer.android.com/studio/</a></p>
+
+
+
+                    <h4>Check Other Requirements</h4>
+                    <p>
+                        To make things working smoothly, just make sure you have jdk 1.8.x version installed on your
+                        machine.
+                    </p>
+                    <p>Also make sure that JAVA_HOME enviornment variable is set in your system.</p>
+                    <p>More info about Java can be found here: <a
+                            href="https://www.oracle.com/in/java/technologies/javase-downloads.html">https://www.oracle.com/in/java/technologies/javase-downloads.html</a>
+                    </p>
+
+                    <p>Also please make sure you have gradle installed on your system.</p>
+                    <p>More info about Gradle and its installation can be found here: <a
+                            href="https://gradle.org/install/">https://gradle.org/install/</a>
+                    </p>
+
+                    <p>To know more about the these requirements visit: <a
+                            href="https://cordova.apache.org/docs/en/latest/guide/platforms/android/#installing-the-requirements">https://cordova.apache.org/docs/en/latest/guide/platforms/android/#installing-the-requirements</a>.
+                    </p>
+
+                </section>
+
+                <section id="database">
+                    <div class="page-header">
+                        <h1>Create & Configure Database</h1>
+                    </div>
+                    <p>First, unzip the downloaded package.</p>
+                    <p>You can choose to install this app on a local server or on a live website.</p>
+                    <p>If you choose to install this app locally, you must install a <a
+                            href='https://www.wampserver.com/en/' target="_blank">WAMP Server</a>
+                        or <a href='https://www.apachefriends.org/index.html' target="_blank">XAMPP Server</a>.</p>
+
+                    <p>Open your server phpmyadmin and create a new database eg: <code>Our App-database</code></p>
+                    <p>Create a database user and assign it to your newly created database</p>
+                    <p>Assume that your database user has username: <code>admin</code> and password: <code>admin</code>
+                    </p>
+                    <p>Now open the unzipped downloaded project folder and open <code>Our App-rest-api/lib/db.php</code>
+                        file in your favorite editor and enter your database related details like
+                        your host server, database name, database user and database password as shown below</p>
+
+                    <code>
+
+                    $db['serverhost'] = 'localhost';<br/>
+                    $db['serverdatabase'] = 'Our App-database';<br/>
+                    $db['serveruser'] = 'admin';<br/>
+                    $db['serverpassword'] = 'admin';<br/>
+
+                        </code>
+                    <br />
+                    <p><i>Note: Please create a strong password for your database user</i></p>
+
+                    <p>If all seems good, proceed to next step</p>
+                </section>
+
+                <section id="restapi">
+                    <div class=" page-header">
+                        <h1>Rest Api</h1>
+                    </div>
+                    <p>Now lets import the database tables of our project.</p>
+                    <p>From your downloaded package, open database folder. You will find a file
+                        <code>rest-api-database.sql</code>. Import this file in your database (created in above step).
+                    </p>
+                    <p>Create a rest api folder on your server as eg: <code>/Our App-phonegap/rest-api</code></p>
+                    <p>Now copy the contents of <code>Our App-rest-api</code> (in downloaded package) and upload it on your
+                        server in
+                        <code>/Our App-phonegap/rest-api</code> folder. Lets assume that you upload it on
+                        following path <code>http://mydomain.com/Our App-phonegap/rest-api/</code></p>
+                    <p>Your <code>lib/db.php</code> file should be accessible from following path:
+                        <code>http://mydomain.com/Our App-phonegap/rest-api/lib/db.php</code></p>
+
+                    <p>Note: Along with creating all necessary tables in database, This step will create a new user row
+                        in database. This user will be a admin user with credentials username: <code>admin</code> and
+                        password:
+                        <code>admin</code>. This info will be used in steps while configuring admin panel later.</p>
+
+
+                    <p>If you followed all above steps correctly then it should finish your rest api installation for
+                        this project.</p>
+
+
+
+
+                </section>
+
+
+                <section id="create-phonegap">
+                    <div class="page-header">
+                        <h1>Create Cordova/Phonegap App</h1>
+                    </div>
+
+                    <p>Go to the directory where you maintain your source code, and you can create a cordova project by
+                        running the following command in your terminal</p>
+                    <pre>cordova create foldername com.phonegap.name appname</pre>
+                    <p>
+                        To install our Our App-phonegap project run the following command. Make the changes as your
+                        requirements:</p>
+                    <pre>cordova create Our App-phonegap com.phonegap.Our App Our App</pre>
+
+                    <p>This creates the required directory structure for your cordova app. By default, the cordova
+                        create script generates a skeletal web-based application</p>
+
+                    <p>Now navigate to your newly created project folder and replace the files with our project files
+                    </p>
+                    <p>Copy files from downloaded project <code>Our App-phonegap</code> folder and paste them in your newly
+                        created cordova app
+                        folder. Please take care of maintaing the proper directory structure while replacing the files.
+                    </p>
+
+                </section>
+
+
+                <section id="configure-app">
+                    <div class="page-header">
+                        <h1>Configure App</h1>
+                    </div>
+                    <p>Before proceeding further, we need to make sure we connect our Rest Api (configured earlier) with
+                        this app.</p>
+                    <p>Open <code>Our App-phonegap/www/assets/js/variables.js</code> file in your favorite editor.
+                    </p>
+
+                    <p>Replace the following line with
+                        <code>var REST_API_URL = 'https://mydomain.com/Our App-rest-api/'</code> with
+                        your Rest Api url</p>
+
+                    <p>If your rest api is installed as per the steps mentioned above, then your replace it as
+                        <code>var REST_API_URL = 'https://mydomain.com/Our App-phonegap/rest-api/'</code></p>
+
+                    <p>Please make sure to add <code>slash (/)</code> at end of url above.</p>
+
+                    <p>This should connect your rest api with your phonegap app.</p>
+                </section>
+
+
+                <section id="add-platforms">
+                    <div class="page-header">
+                        <h1>Add Platforms</h1>
+                    </div>
+
+                    <p>All subsequent commands need to be run within the project's directory</p>
+                    <p>Navigate to your project directory</p>
+                    <pre>cd Our App-phonegap</pre>
+
+                    <p>Add the platforms that you want to target your app. We will add the 'ios' and 'android' platform
+                        and ensure they get saved to config.xml and package.json:</p>
+                    <pre>cordova platform add ios <br/>cordova platform add android</pre>
+
+                    <p>Running commands to add or remove platforms affects the contents of the project's platforms
+                        directory, where each specified platform appears as a subdirectory.</p>
+
+                </section>
+
+
+
+
+                <section id="admin-panel">
+                    <div class="page-header">
+                        <h1>Admin Panel</h1>
+                    </div>
+
+                    <p>Now its time to set up our admin panel / backend for this app.</p>
+
+                    <p>Now open the unzipped downloaded project folder and copy <code>Our App-reactjs-admin</code> folder to
+                        your desired location.</p>
+
+                    <p>Then open your terminal window</p>
+
+                    <p><i>Please note that any commands must be ran from the project's root folder.</i></p>
+                    <h4>Open the your project folder in the terminal as per below instructions</h4>
+                    <p>
+                        On the Mac you can just type
+                    </p>
+                    <pre><span class="text-primary">cd</span></pre>
+                    <p>
+                        into the command line and then drag and drop the project folder on to the terminal window. This
+                        will add the path of the project directory next to the <code>cd</code> you just typed. Hit
+                        return and you have changed to your project folder.
+                    </p>
+                    <p>
+                        On Windows you will have to open cmd.exe and then type in
+                    </p>
+                    <pre><span class="text-primary">cd</span> path\to\project\directory</pre>
+                    <p>
+                        and hit return to change into your project folder.
+                    </p>
+                    <h4>Installing plugins</h4>
+                    <p>
+                        From the project's root folder type
+                    </p>
+                    <pre>npm install</pre>
+                    <p>
+                        into the command line.
+                    </p>
+
+                    <p>This will install all the necessary packages for this admin panel. You will notice a newly create
+                        <code>node_modules</code> folder in your project root directory</p>
+
+                </section>
+
+
+                <section id="configure-admin">
+                    <div class="page-header">
+                        <h1>Configure Admin Panel</h1>
+                    </div>
+                    <p>Before proceeding further, we need to make sure we connect our Rest Api (configured earlier) with
+                        this app.</p>
+                    <p>Open <code>Our App-reactjs-admin/.env</code> file in your favorite editor.
+                    </p>
+                    <p>Replace the below code with your values</p>
+                    <code>REACT_APP_BASEDIR=/Our App-phonegap/admin<br/>
+                        REACT_APP_IMGDIR=/Our App-phonegap/admin<br/>
+                        REACT_APP_URL=https://mydomain.com/Our App-phonegap/admin<br/>
+                        REACT_APP_RESTAPI=https://mydomain.com/Our App-phonegap/rest-api/<br/>
+                    </code>
+                    <br>
+                    <p>According to above configuration your app will be hosted at
+                        <code>https://mydomain.com/Our App-phonegap/admin</code>
+
+                        and your Rest Api url is <code>https://mydomain.com/Our App-phonegap/rest-api/</code></p>
+
+                    <p>Replace the values as per your requirements</p>
+
+                    <p>Also note that <code>REACT_APP_BASEDIR</code> and <code>REACT_APP_IMGDIR</code> are same in
+                        values.</p>
+                    <p><code>REACT_APP_URL</code> is made of <code>REACT_APP_BASEDIR</code> at its end.</p>
+                    <p>Please make sure to add <code>slash (/)</code>of url above (at end rest api url only).</p>
+
+
+                    <p>Open <code>Our App-reactjs-admin/.env.production</code> file in your favorite editor and copy the
+                        contents on <code>.env</code> file as it is. You can read more about
+                        <code>.env.production</code> files in
+                        reactjs from their official site.
+                    </p>
+
+
+                    <p>This should connect your rest api with your admin panel.</p>
+                </section>
+
+
+                <section id="run-admin">
+                    <div class="page-header">
+                        <h1>Run Admin Panel</h1>
+                    </div>
+
+                    <p>We've made it easy to develop and test on your local machine. You can start a local server by
+                        running the command</p>
+                    <p>
+                        From the project's root folder type
+                    </p>
+                    <pre>npm start</pre>
+                    <p>
+                        into the command line.
+                    </p>
+                    <p>This will start a local server and open up your browser.</p>
+                    <p>Then you can start your browser and visit this link</p>
+
+                    <pre>http://localhost:3000/</pre>
+
+                    <p>You should be redirected to login screen. For first access in admin panel you can use credentials
+                        as username: <code>admin</code> and password: <code>admin</code>. You can change password after
+                        login.</p>
+
+
+                </section>
+
+                <section id="import-demo">
+                    <div class="page-header">
+                        <h1>Import Demo</h1>
+                    </div>
+                    <p>This step is optional. Follow along this step, only if you wisth to import demo content in your
+                        app.</p>
+                    <p>From your downloaded package, open <code>import-demo</code> folder. You will find a file
+                        <code>rest-api-demo-optional.sql</code>. Import this file in your database (created in above
+                        step).
+                    </p>
+                    <p>To copy all the necessary images of this demo, Copy the contents of
+                        <code>import-demo/uploads</code> directory in your rest api
+                        <code>uploads</code> directory.</p>
+                </section>
+
+                <section id="google-login">
+                    <div class="page-header">
+                        <h1>App Google Login</h1>
+                    </div>
+                    <p>This phonegap app has an option to login user with a google account.</p>
+                    <p>You need to create your own Oauth Client ID from Google Developer Console before making the
+                        google login work properly in this app.</p>
+
+                    <p>First login in your google console developer here <a
+                            href="https://console.developers.google.com/">https://console.developers.google.com/</a>
+                    </p>
+                    <p>Create new project or choose existing one.</p>
+                    <p>Go to library and search google+ api. Click Enable on google+api page.</p>
+                    <p>Then go to credentials in side menu and click on configure consent screen button. On next screen,
+                        select user type as external and click create.</p>
+                    <p>On next page of Oauth Content Screen
+                        Fill application name and select your email. Click Save.</p>
+                    <p>Then Go to credentials in side menu and click create credentials button. Select oauth client id
+                    </p>
+                    <p>On next page, select application type as android. You can choose your own platform of choice as
+                        well. For this documentation purpose we have included this process for android platform.</p>
+                    <p>Then go to project root directory in terminal and run this</p>
+                    <pre>keytool -exportcert -keystore C:\Users\<USERNAME>\.android\debug.keystore -list -v</pre>
+                    <p>Enter password: android</p>
+                    <p>android is the default password. You can choose your own.</p>
+                    <p>This command will generate your sha1 fingerprint something like below:</p>
+                    <pre>97:29:18:13:5D:B0:F2:44:02:27:61:A3:F7:1B:E4:FD:56:2D:A6:1B</pre>
+                    <p>On Create Oauth Client Id page, copy this sha1 code and paste in SHA-1 certificate fingerprint *
+                        field.</p>
+
+                    <p>Open your project directory <code>Our App-phonegap/config.xml</code> file and copy widget id eg:
+                        <code>com.phonegap.Our App</code> </p>
+                    <p>On create oauth cliend id page, enter <code>com.phonegap.Our App</code> in package name* field</p>
+                    <p>Click create button.</p>
+                    <p>On next page you will see oauth client id created message.
+                        Copy the oauth client id and reverse it in any text editor</p>
+                    <p>If your client id is:
+                        <code>836754062314-hm43st16vdrfdgj54rcsi3rfvc5uwesm.apps.googleusercontent.com</code>.
+                        Your reverse client id is: <code>com.googleusercontent.apps.836754062314-hm43st16vdrfdgj54rcsi3rfvc5uwesm
+                        </code>.</p>
+
+                    <p>We have already added Google Plus Cordova Plugin in our code and included in our downloaded
+                        package. If you want the latest version you can install it from <a
+                            href="https://github.com/EddyVerbruggen/cordova-plugin-googleplus">https://github.com/EddyVerbruggen/cordova-plugin-googleplus</a>
+                    </p>
+
+                    <p>In your project directory, edit below files.<br />
+                        - <code>Our App-phonegap/plugins/fetch.json</code> -> find cordova-plugin-googleplus Reversed Client
+                        Id: Replace it with
+                        your
+                        own reverse id<br />
+                        - <code>Our App-phonegap/package.json</code> find cordova-plugin-googleplus Reversed Client Id:
+                        Replace it with your own
+                        reverse id</p>
+
+                    <p>If you follow above steps, you should have configured the google plus login plugin in your app
+                        successfully.</p>
+
+                    <p>For any troubleshooting with this plugin, visit the official plugin page at <a
+                            href="https://github.com/EddyVerbruggen/cordova-plugin-googleplus">https://github.com/EddyVerbruggen/cordova-plugin-googleplus</a>.
+                    </p>
+                </section>
+
+                <section id="build-app">
+                    <div class="page-header">
+                        <h1>Build Your Corodva/Phonegap App</h1>
+                    </div>
+                    <p>All subsequent commands need to be run within the project's directory</p>
+                    <p>Open your terminal and navigate to your project directory</p>
+                    <pre>cd Our App-phonegap</pre>
+
+                    <p>Run the following command to build the project for all platforms:</p>
+                    <pre>cordova build</pre>
+
+                    <p>You can optionally limit the scope of each build to specific platforms</p>
+                    <p>To Build android platform of your app, run command</p>
+                    <pre>cordova build android</pre>
+                    <p>To Build android platform of your app, run command</p>
+                    <pre>cordova build ios</pre>
+
+                </section>
+
+                <section id="debug-app">
+                    <div class="page-header">
+                        <h1>Debug Your App in Android Studio</h1>
+                    </div>
+                    <p>To open a Cordova for Android project in Android Studio:</p>
+                    <p>Launch Android Studio and Import Project. You must import android directory.</p>
+                    <p>Eg: import <code>Our App-phonegap/platforms/android</code> directory in android studio</p>
+                    <p>Once it finishes importing, you should be able to build and run the app directly
+                        from <strong>Android Studio</strong>. See <a
+                            href="https://developer.android.com/studio/intro/index.html">Android Studio Overview</a>
+                        and <a href="https://developer.android.com/studio/run/index.html">Building and Running from
+                            Android Studio</a>
+                        for more details.</p>
+                </section>
+
+                <section id="build-admin">
+                    <div class="page-header">
+                        <h1>Build Admin Panel</h1>
+                    </div>
+                    <p>Now lets build our admin panel for hosting purpose.</p>
+
+                    <p>All subsequent commands need to be run within the project's directory</p>
+                    <p>Open your terminal and navigate to your project directory</p>
+                    <pre>cd Our App-reactjs-admin</pre>
+
+                    <p>By default as per the <code>Our App-reactjs-admin/package.json</code> file homepage variable, the
+                        build will assume that this app is
+                        hosted at <code>/Our App-phonegap/admin/</code>.</p>
+                    <p>You can configure your homepage url in <code>Our App-reactjs-admin/package.json</code> file. Replace
+                        <code>"homepage": "https://mydomain.com/Our App-phonegap/admin"</code> with your desired app
+                        url.</p>
+                    <p>Also make sure that proper values are configured in
+                        <code>.env</code>, <code>.env.production</code> files (as
+                        mentioned in above steps).</p>
+
+
+
+                    <p>To Build your app for production, you need to run the "npm run build" command in your terminal
+                        window.
+                    </p>
+                    <br />
+                    <p>To change the directory to your own you need to replace the <code>/Our App-phonegap/admin/</code>
+                        with your own directory
+                        various places mentioned above. </p>
+
+                    <br />Following are the changes need to be done:<br />
+
+                    <p>1. Open <code class="highlighter-rouge">.env</code> file and replace <code
+                            class="highlighter-rouge">REACT_APP_BASEDIR=/Our App-phonegap/admin</code> to <code
+                            class="highlighter-rouge">REACT_APP_BASEDIR=/new/directory</code> and <code
+                            class="highlighter-rouge">REACT_APP_IMGDIR=/Our App-phonegap/admin</code> to <code
+                            class="highlighter-rouge">REACT_APP_IMGDIR=/new/directory</code>. Note: Do not add <code
+                            class="highlighter-rouge">"/"</code> at the end of the directory path.</p>
+
+
+                    <p>2. Open <code class="highlighter-rouge">.env.production</code> file and make similar changes as
+                        in <code>.env</code> file above.</p>
+
+
+                    <p>3. Open <code class="highlighter-rouge">package.json</code> file and replace <code
+                            class="highlighter-rouge">"homepage": "https://mydomain.com/Our App-phonegap/admin",</code> to
+                        <code class="highlighter-rouge">"homepage": "https://yourdomain/new/directory",</code>. Note: Do
+                        not add <code class="highlighter-rouge">"/"</code> at the end of the directory path.</p>
+
+
+                    <p>After changing to desired directory, you must run <code>npm run build</code> command to generate
+                        the
+                        production build ready for deployment.</p>
+
+                    <p>This command will generate build folder in your project directory. This might take some time
+                        depending on the size of your project.</p>
+                    <p>Once this directory is generated, you can upload this directory on your server via Ftp. </p>
+                    <p>Visit the directory url on your server, you should see your react site up and running online.</p>
+
+                </section>
+
+
+
+                <section id="website">
+                    <div class=" page-header">
+                        <h1>Configure & Upload Website</h1>
+                    </div>
+                    <p>Now lets configure and upload our website on server.</p>
+                    <p>Before proceeding further, we need to make sure we connect our Rest Api (configured earlier) with
+                        our website app.</p>
+                    <p>Open <code>website/assets/js/variables.js</code> file in your favorite editor.
+                    </p>
+
+                    <p>Replace the following line with
+                        <code>var REST_API_URL = 'https://mydomain.com/Our App-rest-api/'</code> with
+                        your Rest Api url</p>
+
+                    <p>If your rest api is installed as per the steps mentioned above, then your replace it as
+                        <code>var REST_API_URL = 'https://mydomain.com/Our App-phonegap/rest-api/'</code></p>
+
+                    <p>Please make sure to add <code>slash (/)</code> at end of url above.</p>
+
+                    <p>This should connect your rest api with your website app.</p>
+
+                    <p>Now, create a website folder on your server as eg: <code>/Our App-phonegap/website</code></p>
+                    <p>Now copy the contents of <code>website</code> (in downloaded package) and upload it on your
+                        server in
+                        <code>/Our App-phonegap/website</code> folder. Lets assume that you upload it on
+                        following path <code>http://mydomain.com/Our App-phonegap/website/</code></p>
+                    <p>Your website front page <code>views/index.html</code> file should be accessible from following
+                        path:
+                        <code>http://mydomain.com/Our App-phonegap/website/views/index.html</code></p>
+
+
+                </section>
+
+
+                <section id="google-login-web">
+                    <div class="page-header">
+                        <h1>Website Google Login</h1>
+                    </div>
+                    <p>This website has an option to login user with a google account.</p>
+                    <p>You need to create your own Oauth Client ID from Google Developer Console before making the
+                        google login work properly in this app.</p>
+
+                    <p>First login in your google console developer here <a
+                            href="https://console.developers.google.com/">https://console.developers.google.com/</a>
+                    </p>
+                    <p>Create new project or choose existing one.</p>
+                    <p>Then Go to credentials in side menu and click create credentials button. Select oauth client id
+                    </p>
+                    <p>On next page, select application type as Web application.</p>
+                    <p>Then, enter click add url in Authorised Redirect URL to add your website url for google login.
+                        According to our project this url is
+                        <code>http://mydomain.com/Our App-phonegap/website/views/ui-social-google-login.php</code>.</p>
+                    <p>Click create button.</p>
+                    <p>On next page you will see oauth client id created message.
+                        Copy the oauth client id and client secret key.</p>
+
+                    <p>In your project directory, open
+                        - <code>website/social/google-api.php</code> file.<br />
+                        First replace MY-GOOGLE-CLIENT-ID
+                        with
+                        your
+                        own Client Id.<br />Then replace MY-GOOGLE-SECRET-KEY with your client Secret Key.
+                    </p>
+
+                    <p>If you follow above steps, you should have configured the google login in your website
+                        successfully.</p>
+
+                    <p>For any troubleshooting with this plugin, visit the official plugin page at <a
+                            href="https://github.com/googleapis/google-api-php-client">https://github.com/googleapis/google-api-php-client</a>.
+                    </p>
+                </section>
+
+
+                <section id="thanks">
+                    <div class="page-header">
+                        <h1>Thanks</h1>
+                    </div>
+                    <p class="lead">Thank you for purchasing. If you have any questions that are beyond the scope of
+                        this documentation, please feel free to <a href="mailto:themepassion@jaybabani.com"
+                            target="_blank">contact me at email: themepassion@jaybabani.com</a>.
+                    </p>
+                </section>
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer-->
+    <footer class="bs-footer">
+        <div class="container">
+            <p>Copyright 2020-21 at <a href="http://jaybabani.com/">jaybabani.com</a></p>
+        </div>
+    </footer>
+    <!-- Scripts-->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/holder.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+    <script src="assets/js/jquery.smooth-scroll.js"></script>
+    <script src="assets/js/application.js"></script>
+    <script>
+        $('.bs-sidenav a').smoothScroll();
+        window.prettyPrint && prettyPrint();
+    </script>
+</body>
+
+</html>

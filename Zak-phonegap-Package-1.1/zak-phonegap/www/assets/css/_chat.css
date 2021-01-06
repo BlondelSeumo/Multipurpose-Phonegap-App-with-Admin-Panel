@@ -1,0 +1,94 @@
+/*----------------------------------------
+  Chat
+------------------------------------------*/
+.chat-area {
+  margin: 0px;
+}
+.chat-area li {
+  display: block;
+  position: relative;
+  margin: 0 0 50px 0;
+}
+.chat-area li.leftside {
+  padding-left: 25px;
+}
+.chat-area .leftside .msg-area {
+  border-radius: 2px;
+  background: #ffffff;
+  min-height: 60px;
+  padding: 15px 15px 15px 30px;
+}
+
+.chat-area li.rightside {
+  padding-right: 25px;
+}
+.chat-area .rightside .msg-area {
+  border-radius: 2px;
+  background: #ffffff;
+  min-height: 60px;
+  padding: 15px 30px 15px 15px;
+}
+.chat-area li.rightside .userpic {
+  left: auto;
+  right: 0px;
+}
+.chat-area .userpic {
+  position: absolute;
+  background: #ccc;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  left: 0px;
+  margin-top: 0px;
+  top: 9px;
+}
+.chat-area .msg {
+  margin: 0px;
+}
+.chat-area .leftside .time {
+  font-size: 80%;
+  margin-top: 5px;
+  float: left;
+  opacity: 0.8;
+}
+.chat-area .rightside .time {
+  font-size: 90%;
+  margin-top: 5px;
+  right: 0px;
+  left: auto;
+  float: right;
+}
+.chat-area .ui-mediabox {
+  margin: 15px -0.75rem 0px -0.75rem;
+}
+
+.unread-count {
+  font-size: 12px;
+  background: var(--primary-color);
+  padding: 5px;
+  line-height: 10px;
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  margin: 5px;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+}
+
+/*----------------------------------------
+  Site - Dark Mode - Chat
+----------------------------------------*/
+[data-site_mode='dark'] .chat-area .msg-area {
+  background-color: #37474f;
+}
+
+[data-site_mode='dark'] .setting-box {
+  background-color: #37474f;
+}
+[data-site_mode='dark'] .setting-box {
+  background-color: #37474f;
+}
+[data-site_mode='dark'] .setting-box h6 {
+  color: #cfd8dc;
+}

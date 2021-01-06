@@ -1,0 +1,49 @@
+
+/*----------------------------------------
+  Icon Boxes
+------------------------------------------*/
+.icon-block {
+  padding: 0 0px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.icon-block i {
+  font-size: 48px;
+}
+
+.icon-block.circular i{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+    line-height: 70px;
+    font-size: 32px;
+    background-color: #ffffff;
+}
+
+.icon-block.boxed i{
+    border-radius: 0%;
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+    line-height: 70px;
+    font-size: 32px;
+    background-color: #ffffff;
+}
+
+.icon-block.bordered i{
+    border-radius: 0%;
+    border: 2px dashed rgba(var(--primary-rgb), 0.4);
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+    line-height: 70px;
+    font-size: 32px;
+}
+/*----------------------------------------
+  Site - Dark Mode - Iconboxes
+----------------------------------------*/
+[data-site_mode="dark"] .icon-block.boxed i,
+[data-site_mode="dark"] .icon-block.circular i{
+  background-color: #37474F;
+}

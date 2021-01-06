@@ -1,0 +1,23 @@
+/*----------------------------------------
+  Footer - Light Style
+------------------------------------------*/
+
+[data-footer='light'] .page-footer {
+  background: #eeeeee;
+}
+[data-footer='light'] .page-footer .logo:after {
+  background-color: var(--primary-color);
+}
+[data-footer='light'] .page-footer .logo {
+  color: #455a64;
+}
+[data-footer='light'] .page-footer .text,
+[data-footer='light'] .page-footer li a,
+[data-footer='light'] .page-footer .social a i,
+[data-footer='light'] .page-footer .footer-copyright .container,
+[data-footer='light'] .page-footer .footer-copyright .container a {
+  color: #546e7a;
+}
+[data-footer='light'] .page-footer .footer-copyright {
+  background: rgba(200, 200, 200, 0.3);
+}

@@ -1,0 +1,24 @@
+
+/*----------------------------------------
+  Testimonials  
+------------------------------------------*/
+
+.slider .slides.testimonials li .userinfo img{
+  position: relative;
+  top: 3px;
+  width: 46px;
+  height: 46px;
+  float: left;
+  margin-right: 10px;
+}
+.testimonials .userinfo{
+  margin-top: 10px;
+  display: inline-block;
+  width: auto;
+}
+.testimonials .userinfo img{
+}
+.testimonials .userinfo .left-align{
+  white-space: nowrap;
+  float: left;
+}

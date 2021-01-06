@@ -1,0 +1,108 @@
+/*----------------------------------------
+  Footer
+------------------------------------------*/
+.page-footer {
+	background: #37474f;
+	padding-bottom: 60px;
+}
+.footer-ex .page-footer {
+	padding-bottom: 0px;
+}
+.page-footer .logo {
+	font-weight: bold;
+	font-size: 20px;
+	color: #cfd8dc;
+}
+.page-footer .logo:after {
+	display: block;
+	position: relative;
+	content: " ";
+	height: 2px;
+	width: 30px;
+	margin: 15px 0 0px 0;
+	background: #b0bec5;
+}
+[data-footer_type="center"] .page-footer {
+	text-align: center;
+}
+[data-footer_type="center"] .page-footer .logo:after,
+.page-footer.center .logo:after {
+	margin: 15px auto 0 auto;
+}
+
+.page-footer .text {
+	color: #cfd8dc;
+}
+.page-footer .link-wrap .link-ul {
+	display: inline-block;
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+.page-footer li {
+	margin: 0 0 10px 0;
+}
+.page-footer li a {
+	color: #cfd8dc;
+}
+.page-footer li a i {
+	margin-right: 10px;
+}
+.page-footer .social-wrap {
+	margin: 0;
+	display: inline-block;
+	width: 100%;
+}
+.page-footer .social {
+	margin-top: 10px;
+}
+.page-footer .social a {
+	margin: 10px 10px 0 0;
+	display: inline-block;
+}
+.page-footer .social a i {
+	margin: 0px;
+	color: #cfd8dc;
+	font-size: 18px;
+}
+.page-footer .footer-copyright {
+	background: rgba(50, 50, 50, 0.3);
+}
+.page-footer .footer-copyright .container,
+.page-footer .footer-copyright .container a {
+	color: #78909c;
+	font-size: 13px;
+}
+
+.page-footer.light-bg {
+	background-color: #ffffff;
+}
+.page-footer.light-bg .footer-copyright {
+	background: rgba(150, 150, 150, 0.1);
+}
+
+.page-footer.white-text *,
+.page-footer.white-text a,
+.page-footer.white-text .social a i {
+	color: #ffffff;
+}
+.page-footer.white-text .logo:after {
+	background: #f5f5f5;
+}
+.page-footer.white-text .footer-copyright .container,
+.page-footer.white-text .footer-copyright .container a {
+	color: #eeeeee;
+}
+
+.page-footer.dark-text *,
+.page-footer.dark-text a,
+.page-footer.dark-text .social a i {
+	color: #455a64;
+}
+.page-footer.dark-text .logo:after {
+	background: #607d8b;
+}
+.page-footer.dark-text .footer-copyright .container,
+.page-footer.dark-text .footer-copyright .container a {
+	color: #607d8b;
+}

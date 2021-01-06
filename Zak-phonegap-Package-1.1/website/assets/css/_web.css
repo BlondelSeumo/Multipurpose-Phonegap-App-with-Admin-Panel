@@ -1,0 +1,201 @@
+@media only screen and (min-width: 601px) {
+  body.web .primg {
+    min-height: 450px;
+  }
+  body.web .ui-profile .prname {
+    margin-top: 250px;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  nav .brand-logo {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  body.web:not(.isfullscreen) .sidenav.sidemenu {
+    transform: translateX(0%) !important;
+  }
+  body.web:not(.isfullscreen) .carousel-container-area,
+  body.web:not(.isfullscreen) .chart-container,
+  body.web:not(.isfullscreen) .container {
+    margin-left: 300px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: calc(100% - 300px);
+  }
+  body.web:not(.isfullscreen) .sidenav-overlay {
+    /* display: none !important; */
+  }
+  body.web:not(.isfullscreen) .navicon.back-button,
+  body.web:not(.isfullscreen) .navicon[data-target='slide-nav'] {
+    display: none !important;
+  }
+  body.web:not(.isfullscreen) #logo-container {
+    left: 65px !important;
+  }
+  body.web .tabs {
+    padding-left: 300px;
+  }
+  nav .navicon.sidenav-trigger[data-target='slide-settings'] {
+    margin-right: 0px;
+  }
+  form {
+    max-width: 1000px;
+  }
+  .chart-wrap {
+    height: 500px !important;
+  }
+
+  body.web .login-area form,
+  body.web.loginpage form {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+  }
+
+  /*profile*/
+  body.web .ui-profile {
+    margin-left: 300px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: calc(100% - 300px);
+  }
+  body.web .ui-profile .container {
+    margin-left: 0px;
+  }
+  body.web .ui-profile .tabs {
+    padding-left: 0px;
+  }
+  body.web .primg {
+    min-height: 550px;
+  }
+  body.web .ui-profile .prname {
+    margin-top: 350px;
+  }
+
+  /*collection*/
+  body.web .collection .collection-item.avatar .secondary-content {
+    position: relative;
+    top: 10px;
+    right: auto;
+    left: 0px;
+    /* width: 100%; */
+    float: none;
+  }
+
+  /*chat*/
+  body.web .chat-form {
+    padding-left: 320px;
+    width: 100%;
+    padding-right: 80px;
+  }
+  body.web .chat-form form {
+    max-width: none;
+  }
+
+  /*background images*/
+  body.web .primg {
+    background-position: center center;
+  }
+
+  /*carousel */
+  body.web:not(.isfullscreen)
+    .carousel.carousel-slider.carousel-fullscreen
+    .carousel-item {
+    margin-left: 300px;
+    width: calc(100% - 300px);
+  }
+  body.web:not(.isfullscreen) .carousel.carousel-fullscreen .indicators {
+    margin-left: 300px;
+    width: calc(100% - 300px);
+  }
+  body.web:not(.isfullscreen)
+    .carousel.carousel-fullscreen
+    .carousel-item
+    .item-content {
+    padding: 25% 15%;
+  }
+  /* body.web .carousel.carousel-fullscreen .carousel-item .bg {
+    background-position: center -700px;
+  } */
+  body.web .carousel.carousel-fullscreen.about_carousel,
+  body.web .carousel.carousel-fullscreen.home_carousel {
+    height: 700px !important;
+  }
+  body.web .carousel.carousel-fullscreen.about_carousel .carousel-item .bg,
+  body.web .carousel.carousel-fullscreen.home_carousel .carousel-item .bg {
+    background-position: center center;
+  }
+  body.web .carousel.carousel-container.carousel-small {
+  }
+  body.web .carousel.carousel-basic.carousel-small {
+    min-height: 400px !important;
+  }
+  body.web .carousel.carousel-basic.carousel-small .carousel-item {
+    min-width: 300px !important;
+  }
+
+  body.web .access-login {
+    background-image: url('../images/access-7-web.jpg'); /* background-position: 0 -90px; */
+  }
+  body.web .access-register {
+    background-image: url('../images/access-4-web.jpg'); /* background-position: 0 -90px; */
+  }
+  body.web .access-reset {
+    background-image: url('../images/access-3-web.jpg'); /* background-position: 0 -20px;  */
+  }
+  body.web .access-forgot {
+    background-image: url('../images/access-5-web.jpg');
+  }
+  body.web .access-404 {
+    background-image: url('../images/access-12-web.jpg'); /* background-position: 0 0px; */
+  }
+  body.web .access-500 {
+    background-image: url('../images/access-6-web.jpg'); /* background-position: 0 -40px; */
+  }
+  body.web .access-welcome {
+    background-image: url('../images/access-8-web.jpg'); /* background-position: 0 -70px; */
+  }
+  body.web .access-lock {
+    background-image: url('../images/access-2-web.jpg'); /* background-position: 0 0px; */
+  }
+  body.web .login-bg:after {
+    background-color: rgba(var(--primary-filter), 0.6);
+  }
+  body.web .page-footer .social {
+    margin-top: 0px;
+  }
+
+  body.web .row.ui-grid,
+  body.web .row.ui-mediabox.fullwidth {
+    margin-left: 300px;
+    width: calc(100% - 300px);
+  }
+}
+@media only screen and (min-width: 1600px) {
+  body.web .primg {
+    background-position: center -170px;
+  }
+  body.web:not(.isfullscreen) .chart-container,
+  body.web:not(.isfullscreen) .container {
+    max-width: none;
+    padding-right: 50px;
+  }
+  body.web .carousel.carousel-fullscreen.about_carousel .carousel-item .bg {
+    background-position: center -500px;
+  }
+  body.web .carousel.carousel-fullscreen.home_carousel .carousel-item .bg {
+    background-position: center -200px;
+  }
+  body.web .carousel.carousel-fullscreen.fullscreencarousel .bg {
+    background-position: center -700px;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  body.web .set-wrap {
+    min-width: 257px;
+  }
+}

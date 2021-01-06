@@ -1,0 +1,33 @@
+/*----------------------------------------
+  Navigation Menu - Dark Style
+------------------------------------------*/
+[data-menu="dark"] .sidenav {
+	background-color: #37474f;
+}
+[data-menu="dark"] .sidenav .subheader {
+	color: #b0bec5;
+}
+[data-menu="dark"] .infoarea {
+	color: #cfd8dc;
+}
+[data-menu="dark"] .sidenav li a,
+[data-menu="dark"] .sidenav li a:hover,
+[data-menu="dark"] .sidenav li a:hover i {
+	color: #cfd8dc;
+}
+[data-menu="dark"] .sidenav li.lvl1 .waves-effect:hover,
+[data-menu="dark"] .sidenav li.lvl1 .waves-effect.active {
+	background-color: #263238;
+}
+[data-menu="dark"] .sidenav .badge.blue-grey {
+	background-color: var(--primary-color) !important;
+}
+[data-menu="dark"] .sidenav .divider {
+	background-color: #455a64;
+}
+[data-menu="dark"] .sidenav .copyright {
+	color: #b0bec5;
+}
+[data-menu="dark"] .menu-close i {
+	color: #cfd8dc;
+}
